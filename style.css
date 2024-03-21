@@ -1,0 +1,51 @@
+body{
+    margin: 10px;
+    padding: 20px;
+    background-image: url(./img/bg.webp);
+    background-repeat: round;
+}
+
+h1{
+    color: red;
+}
+
+img{
+    border-radius: 30px;
+    height: 150px;
+    width: 150px;
+}
+
+.hover{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.hover:hover .animation1{
+    animation: move 4s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25,1);
+}
+
+.hover:hover .animation2{
+    animation: move 4s;
+    transition-timing-function: cubic-bezier(0, 0, 1 ,1);
+}
+
+.hover:hover .animation3{
+    animation: move 4s;
+    transition-timing-function: cubic-bezier(0.42, 0, 1,1);
+}
+
+.hover:hover .animation4{
+    animation: move 4s;
+    transition-timing-function: cubic-bezier(0, 0, 0.58,1);
+}
+
+.hover:hover .animation5{
+    animation: move 4s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58,1);
+}
+@keyframes move {
+    0% {margin-right: 610px;}
+    100% {margin-left:650px;}
+}
